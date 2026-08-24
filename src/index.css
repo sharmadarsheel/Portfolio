@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-charcoal text-cream font-sans antialiased overflow-x-hidden;
+    background-image: 
+      radial-gradient(circle at 10% 20%, rgba(230, 213, 195, 0.03) 0%, transparent 40%),
+      radial-gradient(circle at 90% 80%, rgba(212, 175, 55, 0.03) 0%, transparent 40%);
+  }
+
+  h1, h2, h3, .font-serif-display {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+}
+
+@layer components {
+  /* Glassmorphic Panel styling */
+  .glass-panel {
+    @apply bg-white/[0.04] backdrop-blur-md border border-mutedGold/20 rounded-xl transition-all duration-300;
+  }
+  
+  .glass-panel-hover {
+    @apply hover:bg-white/[0.06] hover:border-mutedGold/40 hover:shadow-[0_8px_30px_rgb(20,18,17,0.5)];
+  }
+
+  /* Heritage Jaali Grid Decorative element */
+  .jaali-overlay {
+    background-image: radial-gradient(rgba(212, 175, 55, 0.1) 1px, transparent 1px);
+    background-size: 20px 20px;
+  }
+
+  /* Jaipur Architectural Arch representation */
+  .jaipur-arch {
+    border-radius: 50% 50% 0 0 / 40% 40% 0 0;
+  }
+
+  .jaipur-arch-reverse {
+    border-radius: 0 0 50% 50% / 0 0 40% 40%;
+  }
+
+  /* Custom Buttons */
+  .btn-gold {
+    @apply relative px-6 py-2.5 rounded border border-mutedGold/40 text-cream bg-transparent hover:bg-mutedGold/10 active:bg-mutedGold/20 transition-all duration-300 overflow-hidden font-medium tracking-wider text-sm uppercase;
+  }
+
+  .btn-gold-fill {
+    @apply relative px-6 py-2.5 rounded text-charcoal bg-mutedGold hover:bg-mutedGold/90 active:bg-mutedGold/80 transition-all duration-300 font-semibold tracking-wider text-sm uppercase shadow-lg shadow-mutedGold/20;
+  }
+}
+
+/* Custom Scrollbar styled for the theme */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1A1614;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(212, 175, 55, 0.2);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(212, 175, 55, 0.4);
+}
