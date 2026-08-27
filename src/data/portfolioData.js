@@ -49,6 +49,14 @@ export const portfolioData = {
       role: "Leadership, ideation, and rebranding",
       description: "Interactive conversational UI designed for practical environment utility.",
       techStack: ["HTML", "Tailwind CSS", "JavaScript", "Gemini API"]
+    },
+    {
+      id: "machine-minds",
+      title: "MachineMinds",
+      context: "AI machine health checker for big industries",
+      role: "Leadership, ideation, and implementation",
+      description: "Helps to utilize the machines in industry to their real effectiveness.",
+      techStack: ["HTML", "Tailwind CSS", "JavaScript", "Flask", "Python", "ML Model"]
     }
   ],
   experience: [
@@ -56,7 +64,8 @@ export const portfolioData = {
       title: "LNMHacks 8.0",
       type: "Hackathon",
       platform: "DoraHacks",
-      status: "Submitted"
+      status: "Submitted",
+      location: "LNMIIT"
     },
     {
       title: "Solution Challenge 2026",
@@ -68,7 +77,15 @@ export const portfolioData = {
       title: "Projectathon 2.0",
       type: "Hackathon",
       team: "Team MachineMinds",
-      location: "Arya College of Engineering & IT"
+      location: "Arya College of Engineering & IT",
+      status: "Top 15"
+    },
+    {
+      title: "NamasteDev Hackathon",
+      type: "Hackathon",
+      team: "Team MachineMinds",
+      location: "Arya College of Engineering & IT",
+      status : "Top 30%"
     }
   ],
   organizations: [
