@@ -6,7 +6,7 @@ export const portfolioData = {
     location: "Jaipur, India",
     about: "A passionate AI & Data Science engineering student who combines intelligent systems, machine learning, and clean frontend architectures to build high-performance digital experiences.",
     avatar: "/images/portrait.jpg",
-    email: "realdarsheelsharam@gmail.com",
+    email: "realdarsheelsharma@gmail.com",
     github: "https://github.com/sharmadarsheel",
     linkedin: "https://www.linkedin.com/in/darsheel-sharma-engineer/",
   },
